@@ -1,0 +1,11 @@
+const { createReadStream } = require('fs');
+
+const stream = createReadStream('./content/big.txt', {
+    highWaterMark: 90000,
+})
+
+stream.on('data', (result) => {
+    console.log(result)
+})
+
+stream.on('eror', (err) => console.log(err))
