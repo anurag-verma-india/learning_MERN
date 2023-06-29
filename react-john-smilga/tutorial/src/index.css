@@ -23,14 +23,12 @@ body {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
   }
-  .book {
-    background: #fff;
-    border-radius: 1rem;
-    padding: 2rem;
-  }
 }
 .book {
   text-align: center;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .book img {
