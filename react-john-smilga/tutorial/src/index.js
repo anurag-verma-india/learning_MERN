@@ -7,21 +7,22 @@ const books = [
     author: 'Rebecca Yarros',
     title: 'Iron Flame (The Empyrean, 2)',
     img: './images/book-1.jpg',
+    id: 1,
   },
   {
     author: 'James Clear',
     title: 'Atomic Habits',
     img: 'https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L._AC_UL600_SR600,400_.jpg',
+    id: 2,
   },
 ];
-
-const names = ['john', 'peter', 'susan'];
 
 const BookList = () => {
   return (
     <section className="booklist">
-      {names.map((name) => {
-        return <h1>{name}</h1>;
+      {books.map((book) => {
+        const { img, title, author, id } = book;
+        return <Book {...book} key={book.id} />;
       })}
     </section>
   );
