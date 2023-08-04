@@ -1,11 +1,11 @@
-import Starter from './tutorial/01-useState/starter/01-error-example';
-import Final from './tutorial/01-useState/final/01-error-example';
+import Starter from './tutorial/02-useEffect/starter/03-multiple-effects';
+// import Final from './tutorial/01-useState/final/03-useState-array';
 
 function App() {
   return (
     <div className="container">
       <Starter />
-      <Final />
+      {/* <Final /> */}
     </div>
   );
 }
