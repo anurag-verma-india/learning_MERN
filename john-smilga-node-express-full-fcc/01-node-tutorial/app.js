@@ -1,9 +1,10 @@
-const obi = "Obi wan Kenobi"
-const vader = "Darth Vader"
+const name = require('./04-names')
+const sayHi = require('./05-utils')
+const data = require('./06-alternative-flavor')
 
-const sayHi = (name)=>{
-    console.log(`Hello There, ${name}`)
-}
 
-sayHi(obi)
-sayHi(vader)
+// sayHi(name.obi)
+// sayHi(name.vader)
+
+// console.log(module)
+console.log(data)

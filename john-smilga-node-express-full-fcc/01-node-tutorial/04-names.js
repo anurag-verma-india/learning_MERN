@@ -1,7 +1,8 @@
 // local
 const secret = 'SUPER SECRET'
 // share
-const john = 'john'
-const peter = 'peter'
+const obi = "Obi wan Kenobi"
+const vader = "Darth Vader"
 
-module.exports = { john, peter }
+
+module.exports = { obi, vader }
