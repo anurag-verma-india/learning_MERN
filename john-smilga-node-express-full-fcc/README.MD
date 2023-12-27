@@ -26,3 +26,8 @@ Find the App Useful? [You can always buy me a coffee](https://www.buymeacoffee.c
 9. Stripe Payment
 10. E-Commerce API
 11. Auth Workflow (verify email, reset password)
+
+
+
+
+# My notes
