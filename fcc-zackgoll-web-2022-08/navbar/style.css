@@ -1,0 +1,52 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    line-height: 60px;
+    padding-left: 10px;
+}
+
+nav {
+    background-color: #00aaff;
+    height: 60px;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #ff9500;
+    margin: 20px;
+}
+
+.boxes {
+    margin-top: 80px;
+}
+
+.rel-position {
+    position: relative;
+    top: 10px;
+    width: 400px;
+}
+
+.abs-position {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    width: 80%;
+    background-color: #55ff00;
+    font-size: 1.2rem;
+}
