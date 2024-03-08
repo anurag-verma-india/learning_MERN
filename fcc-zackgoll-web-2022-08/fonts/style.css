@@ -1,0 +1,19 @@
+body {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+p {
+    line-height: 2rem;
+    color: black;
+}
+
+#overlay {
+    width: 10000px;
+    height: 10000px;
+    background-color: #00aaff55;
+    position: absolute;
+    top: 0;
+}
