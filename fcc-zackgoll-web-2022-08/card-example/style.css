@@ -154,6 +154,10 @@ ul {
         height: 400px;
     }
 
+    #top-section p {
+        font-size: 0.9rem;
+    }
+
     #bottom-left-section,
     #bottom-right-section {
         width: 50%;
@@ -163,5 +167,8 @@ ul {
 @media (min-width: 650px) {
     #card {
         width: 600px;
+    }
+    #top-section p {
+        font-size: 1rem;
     }
 }
