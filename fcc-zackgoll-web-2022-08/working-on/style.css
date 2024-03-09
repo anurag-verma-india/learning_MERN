@@ -1,135 +1,16 @@
-html {
-    box-sizing: border-box;
-
-    font-family: "Karla", sans-serif;
-    font-size: 16px;
-    font-weight: 400px;
-
-    --cyan: #2ab2af;
-    --cyan-light: #32D1CE;
-    --bright-yellow: #c0df34;
-    --bright-yellow-darker: #a9c42d;
-
-    --light-gray: hsl(204, 43%, 93%);
-    --grayish-blue: hsl(218, 22%, 67%);
+.flex-container {
+    width: 408px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    border: 4px solid #212226;
 }
 
-h2,
-h4,
-p {
-    margin: 0;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    padding: 30px;
-}
-
-#card {
-    width: 600px;
-    height: 400px;
-    box-shadow: 5px 5px 15px -7px #000000;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-#top-section {
-    width: 100%;
-    height: 45%;
-    padding: 25px;
-}
-
-#top-section h2 {
-    padding-bottom: 15px;
-    color: var(--cyan)
-}
-
-#top-section h4 {
-    padding-bottom: 15px;
-    color: var(--bright-yellow);
-}
-
-#top-section p {
-    color: var(--grayish-blue);
-}
-
-#bottom-section {
-    width: 100%;
-    height: 55%;
-    color: white;
-}
-
-#bottom-left-section {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    vertical-align: top;
-    background-color: var(--cyan);
-    padding: 25px;
-}
-
-#bottom-left-section h4 {
-    padding-bottom: 25px;
-}
-
-#price {
-    font-weight: 800;
-    font-size: 1.4rem;
-    padding-bottom: 10px;
-}
-
-#price,
-#price-frequency {
-    display: inline-block;
-}
-
-#price-frequency {
-    position: relative;
-    top: -3px;
-    color: var(--light-gray);
-    opacity: 0.7;
-    margin-left: 3px;
-    padding: 10px;
-}
-
-#bottom-left-section p {
-    padding-bottom: 40px;
-    font-size: 0.8rem;
-}
-
-button {
-    background-color: var(--bright-yellow);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: var(--bright-yellow-darker);
-    transform: scale(1.02);
-}
-
-#bottom-right-section {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    vertical-align: top;
-    background-color: var(--cyan-light);
-    padding: 25px;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-    color: var(--light-gray);
-    font-size: 0.8rem;
-    opacity: 0.85;
+.fi {
+    background-color: #ff69b4;
+    width: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    line-height: 180px;
 }
