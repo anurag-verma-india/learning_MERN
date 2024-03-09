@@ -1,3 +1,5 @@
+/* Mobile first responsive design */
+
 html {
     box-sizing: border-box;
 
@@ -31,8 +33,6 @@ body {
 }
 
 #card {
-    width: 600px;
-    height: 400px;
     box-shadow: 5px 5px 15px -7px #000000;
     border-radius: 5px;
     overflow: hidden;
@@ -66,7 +66,7 @@ body {
 
 #bottom-left-section {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 100%;
     vertical-align: top;
     background-color: var(--cyan);
@@ -119,7 +119,7 @@ button:hover {
 
 #bottom-right-section {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 100%;
     vertical-align: top;
     background-color: var(--cyan-light);
@@ -132,4 +132,36 @@ ul {
     color: var(--light-gray);
     font-size: 0.8rem;
     opacity: 0.85;
+}
+
+
+@media (min-width: 576px) {
+
+    /* To center the card horizontally and vertically */
+    /* From here */
+    body {
+        height: 100vh;
+        position: relative;
+    }
+
+    #card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    /* To here */
+        width: 530px;
+        height: 400px;
+    }
+
+    #bottom-left-section,
+    #bottom-right-section {
+        width: 50%;
+    }
+}
+
+@media (min-width: 650px) {
+    #card {
+        width: 600px;
+    }
 }
