@@ -59,14 +59,15 @@ body {
 }
 
 #bottom-section {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 55%;
     color: white;
 }
 
 #bottom-left-section {
-    display: inline-block;
-    width: 100%;
+    flex-basis: 50%;
     height: 100%;
     vertical-align: top;
     background-color: var(--cyan);
@@ -77,24 +78,20 @@ body {
     padding-bottom: 25px;
 }
 
+#price-container {
+    display: flex;
+    align-items: center;
+}
+
 #price {
     font-weight: 800;
     font-size: 1.4rem;
-    padding-bottom: 10px;
-}
-
-#price,
-#price-frequency {
-    display: inline-block;
+    margin-right: 5px;
 }
 
 #price-frequency {
-    position: relative;
-    top: -3px;
     color: var(--light-gray);
     opacity: 0.7;
-    margin-left: 3px;
-    padding: 10px;
 }
 
 #bottom-left-section p {
@@ -118,8 +115,7 @@ button:hover {
 }
 
 #bottom-right-section {
-    display: inline-block;
-    width: 100%;
+    flex-basis: 50%;
     height: 100%;
     vertical-align: top;
     background-color: var(--cyan-light);
@@ -137,19 +133,31 @@ ul {
 
 @media (min-width: 576px) {
 
-    /* To center the card horizontally and vertically */
+    /* To center the card horizontally and vertically (without flexbox) */
     /* From here */
     body {
         height: 100vh;
         position: relative;
     }
 
+    
     #card {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
     /* To here */
+    
+    /* Center the card with flexbox */
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card {
         width: 530px;
         height: 400px;
     }
@@ -158,9 +166,8 @@ ul {
         font-size: 0.9rem;
     }
 
-    #bottom-left-section,
-    #bottom-right-section {
-        width: 50%;
+    #bottom-section {
+        flex-direction: row;
     }
 }
 
@@ -168,7 +175,10 @@ ul {
     #card {
         width: 600px;
     }
+
     #top-section p {
         font-size: 1rem;
     }
+
+
 }
