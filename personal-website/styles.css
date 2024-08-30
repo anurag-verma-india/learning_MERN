@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light sky blue background */
+    color: #333;
+}
+
+header {
+    background: #0288d1; /* Darker sky blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #0288d1;
+    border-bottom: 2px solid #0288d1;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0288d1; /* Footer matches the header */
+    color: #fff;
+    position: relative; /* No longer fixed */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid #fff;
+}
+
+a {
+    color: #0288d1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#about {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-left: 5px solid #0288d1; /* Sky blue accent line */
+}
+
+#about h2 {
+    color: #0288d1;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#about p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 0 15px 0; /* Added margin to separate paragraphs */
+    padding: 10px;
+}
