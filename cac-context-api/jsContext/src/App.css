@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.ipt {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.btn {
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+  background-color: #00aaff;
+  color: white
+}
+
+.profile {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
